@@ -17,6 +17,7 @@ header {
   padding: 8px 40px;
   position: fixed;
   width: 100vw;
+  z-index: 10;
 }
 
 .img-header {
@@ -42,6 +43,18 @@ header {
   width: 100%;
   height: 100vh;
   padding-top: 90px;
+  position: relative;
+  overflow: hidden;
+}
+
+#video-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 #inicio img {
@@ -50,9 +63,8 @@ header {
 }
 
 #locais {
-  height: 100vh;
   width: 100%;
-  padding-top: 90px;
+  padding: 90px 40px 40px 40px;
 }
 
 #locais h2 {
@@ -73,6 +85,10 @@ header {
   height: 450px;
 }
 
+.cards p {
+  text-align: justify;
+}
+
 .card-image {
   width: 100%;
   height: 48%;
@@ -86,4 +102,132 @@ header {
 .subtitulo {
   font-weight: 700;
   font-size: 20px;
+}
+
+#climas {
+  height: 100vh;
+  width: 100%;
+  padding: 90px 40px 0 40px;
+  background-color: rgb(68, 23, 23);
+  color: rgb(172, 103, 103);
+  display: flex;
+}
+
+.clima-maior {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quente {
+  height: 40%;
+  width: 100%;
+}
+
+.clima-maior p {
+  text-align: justify;
+}
+
+.clima-menor {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.izq {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: start;
+  padding-right: 32px;
+}
+
+.card-peq {
+  height: 80px;
+  width: 280px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 32px;
+}
+
+.card-peq div h5 {
+  margin: 0;
+}
+
+.card-peq p {
+  font-size: 10px;
+  margin: 0;
+  text-align: justify;
+}
+
+.img-peq {
+  height: 100%;
+  width: 80px;
+  margin-right: 4px;
+}
+
+#historia {
+  width: 100%;
+  padding: 90px 40px 40px 40px;
+  background-color: rgb(54, 23, 23);
+  color: rgb(172, 103, 103);
+  display: flex;
+}
+
+.historia-breve {
+  width: 60%;
+  padding-right: 32px;
+  text-align: justify;
+}
+
+.proceres {
+  width: 30%;
+}
+
+.proceres img {
+  height: 80px;
+  width: 70px;
+  transition: 0.4s;
+}
+
+.proceres img:hover {
+  transform: scale(2);
+}
+
+.proceres p {
+  font-weight: 600;
+}
+
+.card-proceres {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-proceres p {
+  margin-right: 32px;
+}
+
+.proceres li {
+  margin-bottom: 16px;
+}
+
+footer {
+  height: 70px;
+  background-color: rgb(26, 10, 10);
+  color: rgb(172, 103, 103);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
 }
