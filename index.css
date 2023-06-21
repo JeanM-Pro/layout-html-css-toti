@@ -231,3 +231,127 @@ footer {
 footer p {
   margin: 0;
 }
+
+@media (max-width: 840px) {
+  header {
+    flex-direction: column;
+    padding: 16px 0;
+    position: relative;
+  }
+
+  .navegacao {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navegacao a {
+    color: black;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  #locais {
+    padding: 20px 40px;
+  }
+
+  .cards {
+    margin-bottom: 40px;
+  }
+
+  #climas {
+    height: auto;
+    padding: 20px 40px;
+  }
+
+  .clima-menor {
+    height: auto;
+  }
+}
+
+@media (max-width: 621px) {
+  .cards {
+    margin-bottom: 40px;
+    border: 1px solid black;
+    border-radius: 16px;
+    height: auto;
+  }
+
+  .cards p {
+    padding: 0 12px;
+  }
+
+  .card-image {
+    border-radius: 16px 16px 0 0;
+  }
+
+  #climas {
+    height: auto;
+    padding: 20px 40px;
+    flex-direction: column;
+  }
+
+  .clima-menor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .izq {
+    flex-direction: column;
+    padding-right: 0;
+  }
+
+  .card-peq {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .card-peq div {
+    padding: 4px;
+  }
+
+  .clima-maior {
+    width: 100%;
+  }
+
+  #historia {
+    padding: 40px;
+    flex-direction: column;
+  }
+
+  .historia-breve {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .historia-breve h2 {
+    text-align: center;
+  }
+
+  .historia-breve h3 {
+    text-align: start;
+  }
+
+  .proceres {
+    width: 100%;
+  }
+
+  .proceres h2 {
+    text-align: center;
+  }
+
+  footer {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
